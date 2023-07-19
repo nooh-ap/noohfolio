@@ -37,6 +37,13 @@
 	width: 80% !important;
 }
 
+.subtitle-A {
+	font-size: 1rem;
+	font-weight: bolder;
+	padding-top: 4px;
+	color: var(--secondary-color);
+}
+
 .about-left-side {
 	display: flex;
 	flex-direction: column;

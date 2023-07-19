@@ -9,15 +9,15 @@ const SEO = [
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I am a Full Stack engineer with expertise in various of languages and tools. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+		keywords: ["Nooh", "Nooh P", "Nooh Patterson"],
 	},
 
 	{
 		page: "articles",
 		description:
 			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+		keywords: ["Nooh", "Nooh P", "Nooh Patterson"],
 	},
 
 	{

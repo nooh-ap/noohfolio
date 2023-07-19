@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React, {useEffect} from "react";
+import {Helmet} from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
@@ -33,9 +32,6 @@ const About = () => {
 				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
 					</div>
 
 					<div className="about-container">
@@ -43,6 +39,9 @@ const About = () => {
 							<div className="about-right-side">
 								<div className="title about-title">
 									{INFO.about.title}
+								</div>
+								<div className="subtitle-A about-title">
+									{INFO.about.subtitle}
 								</div>
 
 								<div className="subtitle about-subtitle">

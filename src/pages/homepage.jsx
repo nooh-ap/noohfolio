@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React, {useEffect, useState} from "react";
+import {Helmet} from "react-helmet";
 
-import { faMailBulk, faMailForward } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram, faLinkedin, faMedium,
-} from "@fortawesome/free-brands-svg-icons";
-
-import Logo from "../components/common/logo";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedin,} from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
@@ -82,11 +75,6 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="homepage-logo-container">
-						<div style={logoStyle}>
-							<Logo width={logoSize} link={false} />
-						</div>
-					</div>
 
 					<div className="homepage-container">
 						<div className="homepage-first-area">
@@ -123,60 +111,34 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.medium}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-										icon={faMedium}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							{/* <a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a> */}
-							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailForward}
+									icon={faEnvelope}
 									className="homepage-social-icon"
 								/>
 							</a>
 						</div>
 
 						<div className="homepage-projects">
+							<h2 className="hompeage-h2">Currently Working On</h2>
 							<AllProjects />
+							{/*<p className="homepage-p">View All Projects*/}
+							{/*	<FontAwesomeIcon*/}
+							{/*	icon={faArrowRight}*/}
+							{/*	className={"homepage-arrow"}*/}
+							{/*/></p>*/}
 						</div>
+
+						<h2>
+
+						</h2>
+						{/*TODO: Add This Section*/}
+						{/*<h2 className="homepage-projects">*/}
+						{/*	Currently Learning{" "}*/}
+						{/*</h2>*/}
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
