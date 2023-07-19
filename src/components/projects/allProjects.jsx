@@ -14,6 +14,7 @@ const AllProjects = () => {
 					<Project
 						logo={project.logo}
 						title={project.title}
+						subtitle={project.subtitle}
 						description={project.description}
 						linkText={project.linkText}
 						link={project.link}
